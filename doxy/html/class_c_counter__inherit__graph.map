@@ -1,0 +1,5 @@
+<map id="CCounter" name="CCounter">
+<area shape="rect" id="node1" title="Klasse CCounter zum Setzen, Inkrementieren und Vergleichen von Zählerständen." alt="" coords="107,5,211,171"/>
+<area shape="rect" id="node2" href="$class_c_forward_counter.html" title=" " alt="" coords="5,226,148,318"/>
+<area shape="rect" id="node3" href="$class_c_variable_counter.html" title=" " alt="" coords="172,219,315,325"/>
+</map>

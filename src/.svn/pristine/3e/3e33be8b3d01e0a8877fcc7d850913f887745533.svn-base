@@ -1,0 +1,34 @@
+//!\file CArrayEnc.hpp
+/*
+ * CArrayEnc.hpp
+ *
+ *  Created on: 22.06.2020
+ *      Author: fin_b
+ */
+
+#ifndef CARRAYENC_HPP_
+#define CARRAYENC_HPP_
+
+#include "CEnc.hpp"
+#include "CArray.hpp"
+#include "CEntry.hpp"
+
+//! Klasse CArrayEnc zum encodieren von Zeichenketten mit dem LZW-Algorithmus, auf Basis einer Arraydatenstruktur
+/*!
+ * CArrayEnc() ist der parameterlose Konstruktor
+ * ~CArrayEnc() ist der virtuelle Destruktor
+ */
+
+class CArrayEnc: public CEnc {
+public:
+	/*!
+	 * Deklaration des parameterlosen Konstruktors.
+	 */
+	CArrayEnc();
+	/*!
+	 * Deklaration des Destruktors.
+	 */
+	virtual ~CArrayEnc();
+};
+
+#endif /* CARRAYENC_HPP_ */

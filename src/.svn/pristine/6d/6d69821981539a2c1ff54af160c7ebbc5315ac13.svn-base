@@ -1,0 +1,21 @@
+/*
+ * CArrayDec.cpp
+ *
+ *  Created on: 22.06.2020
+ *      Author: fin_b
+ */
+
+#include "CArrayDec.hpp"
+
+CArrayDec::CArrayDec() {
+	// TODO Auto-generated constructor stub
+
+}
+
+CArrayDec::~CArrayDec() {
+	// TODO Auto-generated destructor stub
+}
+
+std::string CArrayDec::decode(const vector<unsigned int> &in){
+
+}

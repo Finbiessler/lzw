@@ -1,0 +1,34 @@
+//!\file CArrayDec.hpp
+/*
+ * CArrayDec.hpp
+ *
+ *  Created on: 22.06.2020
+ *      Author: fin_b
+ */
+
+#ifndef CARRAYDEC_HPP_
+#define CARRAYDEC_HPP_
+
+#include "CDec.hpp"
+#include "CArray.hpp"
+#include "CEntry.hpp"
+
+//! Klasse CArrayDec zum decodieren von Zeichenketten mit dem LZW-Algorithmus, auf Basis einer Arraydatenstruktur
+/*!
+ * CArrayDec() ist der parameterlose Konstruktor
+ * ~CArrayDec() ist der virtuelle Destruktor
+ */
+
+class CArrayDec: public CDec {
+public:
+	/*!
+	 * Deklaration des parameterlosen Konstruktors.
+	 */
+	CArrayDec();
+	/*!
+	 * Deklaration des virtuellen Destruktors.
+	 */
+	virtual ~CArrayDec();
+};
+
+#endif /* CARRAYDEC_HPP_ */

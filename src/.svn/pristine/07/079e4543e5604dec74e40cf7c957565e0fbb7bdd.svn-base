@@ -1,0 +1,18 @@
+/*
+ * CArrayEnc.cpp
+ *
+ *  Created on: 22.06.2020
+ *      Author: fin_b
+ */
+
+#include "CArrayEnc.hpp"
+
+CArrayEnc::CArrayEnc() {
+	// TODO Auto-generated constructor stub
+
+}
+
+CArrayEnc::~CArrayEnc() {
+	// TODO Auto-generated destructor stub
+}
+

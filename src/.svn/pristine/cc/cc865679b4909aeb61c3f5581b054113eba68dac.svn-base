@@ -1,0 +1,18 @@
+/*
+ * CTrieDec.cpp
+ *
+ *  Created on: 22.06.2020
+ *      Author: fin_b
+ */
+
+#include "CTrieDec.hpp"
+
+CTrieDec::CTrieDec() {
+	// TODO Auto-generated constructor stub
+
+}
+
+CTrieDec::~CTrieDec() {
+	// TODO Auto-generated destructor stub
+}
+

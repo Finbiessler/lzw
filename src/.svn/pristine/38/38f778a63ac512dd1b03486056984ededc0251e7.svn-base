@@ -1,0 +1,36 @@
+//!\file CTrieEnc.hpp
+/*
+ * CTrieEnc.hpp
+ *
+ *  Created on: 22.06.2020
+ *      Author: fin_b
+ */
+
+#ifndef CTRIEENC_HPP_
+#define CTRIEENC_HPP_
+
+#include "CEnc.hpp"
+#include "CArray.hpp"
+#include "CKnot.hpp"
+#include "CDoubleHashing.hpp"
+#include "CForwardCounter.hpp"
+
+//! Klasse CTrieEnc zum encodieren von Zeichenketten mit dem LZW-Algorithmus, auf Basis einer Triedatenstruktur
+/*!
+ * CTrieEnc() ist der parameterlose Konstruktor
+ * ~CTrieEnc() ist der virtuelle Destruktor
+ */
+
+class CTrieEnc: public CEnc {
+public:
+	/*!
+	 * Deklaration des parameterlosen Konstruktors.
+	 */
+	CTrieEnc();
+	/*!
+	 * Deklaration des virtuellen Destruktors.
+	 */
+	virtual ~CTrieEnc();
+};
+
+#endif /* CTRIEENC_HPP_ */

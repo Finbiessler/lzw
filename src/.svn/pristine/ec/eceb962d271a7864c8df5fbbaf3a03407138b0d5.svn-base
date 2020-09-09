@@ -1,0 +1,42 @@
+//!\file CTrieDec.hpp
+/*
+ * CTrieDec.hpp
+ *
+ *  Created on: 22.06.2020
+ *      Author: fin_b
+ */
+
+#ifndef CTRIEDEC_HPP_
+#define CTRIEDEC_HPP_
+
+#include "CDec.hpp"
+#include "CArray.hpp"
+#include "CKnot.hpp"
+#include "CDoubleHashing.hpp"
+#include "CForwardCounter.hpp"
+
+//! Klasse CTrieDec zum decodieren von Zeichenketten mit dem LZW-Algorithmus, auf Basis einer Triedatenstruktur
+/*!
+ * CTrieDec() ist der parameterlose Konstruktor
+ * ~CTrieDec() ist der virtuelle Destruktor
+ */
+
+class CTrieDec: public CDec {
+public:
+	/*!
+	 * Deklaration des parameterlosen Konstruktors.
+	 */
+	CTrieDec();
+	/*!
+	 * Deklaration des virtuellen Destruktors.
+	 */
+	virtual ~CTrieDec();
+	/*!
+	 *
+	 * @param input
+	 * @return
+	 */
+	std::string decode(const vector<unsigned int>& input);
+};
+
+#endif /* CTRIEDEC_HPP_ */

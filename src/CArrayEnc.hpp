@@ -1,0 +1,50 @@
+//!\file CArrayEnc.hpp
+/*
+ * CArrayEnc.hpp
+ *
+ *  Created on: 22.06.2020
+ *      Author: fin_b
+ */
+
+#ifndef CARRAYENC_HPP_
+#define CARRAYENC_HPP_
+
+#include "CEnc.hpp"
+#include "CArray.hpp"
+#include "CEntry.hpp"
+
+//! Klasse CArrayEnc zum encodieren von Zeichenketten mit dem LZW-Algorithmus, auf Basis einer Arraydatenstruktur
+/*!
+ * CArrayEnc() ist der parameterlose Konstruktor
+ * ~CArrayEnc() ist der virtuelle Destruktor
+ * encode(const std::string &in) encodiert den Eingabe string nach dem LZW-Algorihmus
+ * findInDict(const std::string &str) Sucht den String im Dictionary
+ */
+
+class CArrayEnc: public CEnc {
+public:
+	/*!
+	 * Deklaration des parameterlosen Konstruktors. Welcher die ersten 256 Einträge des Dictionary mit den ASCII-Zeichen initialisiert
+	 */
+	CArrayEnc();
+	/*!
+	 * Deklaration des Destruktors.
+	 */
+	virtual ~CArrayEnc();
+	/*!
+	 * Encodiert den Input-String mit Hilfe des LZW-Algorithmus
+	 * @param input String welcher encodiert wird
+	 * @return Vektor aus unsigned int mit desshilfe der encodierte Strin in wieder decodiert werden kann
+	 */
+	vector<unsigned int> encode(const std::string& input);
+private:
+	/*!
+	 * Sucht den String  in der Dictionary und gibt den entsprechenden Index zurück falls der String gefunden wurde, -1 andernfalls
+	 * @param str String welcher in dem Dictionary gesucht werden soll
+	 * @return Index des Strings im Array (Dictionary) falls vorhanden, -1 andernfalls
+	 */
+	int findInDict(const std::string &str);
+	CArray<CEntry, LZW_DICT_SIZE> m_symbolTable; //!<Private Membervariable der Templateklasse CArray von CEntrys der Größe LZW_DICT_SIZE, welche das Dictionary abstrahiert
+};
+
+#endif /* CARRAYENC_HPP_ */

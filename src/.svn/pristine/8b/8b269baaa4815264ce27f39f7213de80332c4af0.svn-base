@@ -1,0 +1,18 @@
+/*
+ * CTrieEnc.cpp
+ *
+ *  Created on: 22.06.2020
+ *      Author: fin_b
+ */
+
+#include "CTrieEnc.hpp"
+
+CTrieEnc::CTrieEnc() {
+	// TODO Auto-generated constructor stub
+
+}
+
+CTrieEnc::~CTrieEnc() {
+	// TODO Auto-generated destructor stub
+}
+
